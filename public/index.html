@@ -1,0 +1,59 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+	  	<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Artists</title>
+    	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<form name="artistForm">
+			<input type="hidden" name="id" value="0" />
+			
+			<div class="form-group">
+				<label for="name">Имя:</label>
+				<input class="form-control" name="name" />
+			</div>
+			
+			<div class="form-group">
+				<label for="surname">Фамилия:</label>
+				<input class="form-control" name="surname" />
+			</div>
+			
+			<div class="form-group">
+				<label for="nickname">Отчество:</label>
+				<input class="form-control" name="nickname" />
+			</div>
+			
+			<div class="form-group">
+				<label for="age">Возраст:</label>
+				<input class="form-control" name="age" />
+			</div>
+			
+			<!-- Конпки сохранить/сбросить -->
+			<div class="panel-body">
+				<button type="submit" class="btn btn-sm btn-primary">Сохранить</button>
+				<a id="reset" class="btn btn-sm btn-primary">Сбросить</a>
+			</div>
+		</form>
+		
+		<table class="table table-condensed table-striped table-bordered">
+			<thead>
+				<tr>
+					<th>ID</th>
+					<th>Имя</th>
+					<th>Фамилия</th>
+					<th>Псевдоним</th>
+					<th>Возраст</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+			</tbody>
+		</table>
+
+		<script src="js/script.js"></script>
+	</body>
+</html>
